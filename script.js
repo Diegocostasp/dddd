@@ -1,6 +1,6 @@
 // A URL para o seu arquivo JSON.
 // Certifique-se de que 'videos.json' esteja na mesma pasta que 'index.html' no seu servidor.
-const VIDEOS_DATA_URL = 'videos.json';
+const VIDEOS_DATA_URL = 'https://raw.githubusercontent.com/Diegocostasp/dddd/refs/heads/main/videos.json';
 
 let videosData = []; // Inicializa como array vazio, será preenchido via fetch
 
