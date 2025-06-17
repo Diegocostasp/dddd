@@ -1,6 +1,8 @@
-// A URL para o seu arquivo JSON.
-// Certifique-se de que 'videos.json' esteja na mesma pasta que 'index.html' no seu servidor.
-const VIDEOS_DATA_URL = 'https://raw.githubusercontent.com/Diegocostasp/dddd/refs/heads/main/videos.json';
+// URL para o seu arquivo JSON hospedado no GitHub.
+// ATENÇÃO: raw.githubusercontent.com GERALMENTE NÃO PERMITE fetch() de outras origens
+// devido a políticas CORS. Isso pode causar um erro no console do seu navegador.
+// Se isso acontecer, você precisará hospedar o 'videos.json' em um serviço que envie cabeçalhos CORS.
+const VIDEOS_DATA_URL = 'https://raw.githubusercontent.com/Diegocostasp/dddd/main/videos.json';
 
 let videosData = []; // Inicializa como array vazio, será preenchido via fetch
 
@@ -51,9 +53,10 @@ const observer = new IntersectionObserver((entries) => {
  */
 async function loadVideosData() {
     try {
-        const response = await fetch(VIDEOS_DATA_URL); // Caminho para o seu arquivo JSON
+        const response = await fetch(VIDEOS_DATA_URL); // Tenta carregar o JSON do GitHub raw
         if (!response.ok) {
-            throw new Error(`Erro HTTP! status: ${response.status} ao carregar ${VIDEOS_DATA_URL}`);
+            // Se a resposta não for OK (por exemplo, 404, ou erro de CORS sem resposta válida)
+            throw new Error(`Erro HTTP! status: ${response.status} ao carregar ${VIDEOS_DATA_URL}. Isto pode ser devido a uma política CORS.`);
         }
         videosData = await response.json();
         console.log("Dados de vídeos carregados com sucesso:", videosData);
@@ -70,7 +73,7 @@ async function loadVideosData() {
         console.error("Não foi possível carregar os dados dos vídeos:", error);
         videoFeedContainer.innerHTML = `
             <div class="video-section text-center text-red-400 flex items-center justify-center p-4">
-                <p class="text-xl">Erro ao carregar vídeos: <br>${error.message}.<br>Verifique o caminho do 'videos.json' e o console.</p>
+                <p class="text-xl">Erro ao carregar vídeos: <br>${error.message}.<br> Verifique o console para mais detalhes. Se estiver usando GitHub raw, pode ser um problema de CORS.</p>
             </div>
         `;
     }
@@ -348,5 +351,4 @@ closeCategoryOverlayBtn.addEventListener('click', hideCategoryOverlay);
 // Usamos DOMContentLoaded para garantir que o HTML esteja completamente carregado antes de manipular o DOM
 document.addEventListener('DOMContentLoaded', function() {
     loadVideosData(); // Carrega os dados dos vídeos ao iniciar
-    // As chamadas para filterAndRenderVideos e scrollIntoView estão agora dentro de loadVideosData
 });
