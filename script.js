@@ -1,16 +1,11 @@
-// Simulação de dados de vídeo.
-// Em um ambiente de servidor real, você usaria 'fetch("videos.json").then(response => response.json())'
-// para carregar esses dados de um arquivo JSON externo.
-const videosData = [
-    { id: 'v1', title: 'Onda Perfeita', category: 'Esportes', url: 'https://www.w3schools.com/html/mov_bbb.mp4', description: 'Surfing em ondas gigantes.', liked: false },
-    { id: 'v2', title: 'Natureza em Foco', category: 'Documentário', url: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm', description: 'Uma linda flor desabrochando em slow motion.', liked: false },
-    { id: 'v3', title: 'Receita de Bolo', category: 'Culinária', url: 'https://assets.mixkit.co/videos/preview/mixkit-a-pastry-chef-making-dessert-4100-large.mp4', description: 'Aprenda a fazer um bolo delicioso passo a passo.', liked: false },
-    { id: 'v4', title: 'Explorando a Cidade', category: 'Viagem', url: 'https://assets.mixkit.co/videos/preview/mixkit-drone-shot-of-the-city-at-sunset-1300-large.mp4', description: 'Um passeio aéreo pela cidade ao pôr do sol.', liked: false },
-    { id: 'v5', title: 'Meditação Guiada', category: 'Bem-estar', url: 'https://assets.mixkit.co/videos/preview/mixkit-woman-meditating-in-the-mountains-4091-large.mp4', description: 'Encontre sua paz interior com esta meditação.', liked: false },
-    { id: 'v6', title: 'Melhores Momentos do Basquete', category: 'Esportes', url: 'https://assets.mixkit.co/videos/preview/mixkit-basketball-player-on-court-5047-large.mp4', description: 'Jogadas incríveis do mundo do basquete.', liked: false },
-    { id: 'v7', title: 'Cozinha Vegana Rápida', category: 'Culinária', url: 'https://assets.mixkit.co/videos/preview/mixkit-cooking-fresh-pasta-in-a-kitchen-4467-large.mp4', description: 'Prepare pratos veganos em minutos.', liked: false },
-    { id: 'v8', title: 'Parque Nacional', category: 'Viagem', url: 'https://assets.mixkit.co/videos/preview/mixkit-man-walking-through-a-national-park-3687-large.mp4', description: 'As belezas naturais de um parque nacional.', liked: false },
-];
+// A URL para o seu arquivo JSON.
+// Certifique-se de que 'videos.json' esteja na mesma pasta que 'index.html' no seu servidor.
+const VIDEOS_DATA_URL = 'videos.json';
+
+let videosData = []; // Inicializa como array vazio, será preenchido via fetch
+
+// Confirmação de que o script está sendo carregado e em execução
+console.log("script.js carregado e em execução!");
 
 const videoFeedContainer = document.getElementById('videoFeedContainer');
 const searchInput = document.getElementById('searchInput');
@@ -50,6 +45,36 @@ const observer = new IntersectionObserver((entries) => {
 }, {
     threshold: 0.7 // Dispara quando 70% do vídeo está visível
 });
+
+/**
+ * Função para carregar os dados dos vídeos do arquivo JSON.
+ */
+async function loadVideosData() {
+    try {
+        const response = await fetch(VIDEOS_DATA_URL); // Caminho para o seu arquivo JSON
+        if (!response.ok) {
+            throw new Error(`Erro HTTP! status: ${response.status} ao carregar ${VIDEOS_DATA_URL}`);
+        }
+        videosData = await response.json();
+        console.log("Dados de vídeos carregados com sucesso:", videosData);
+
+        // Após carregar os dados, renderiza os vídeos e as categorias
+        filterAndRenderVideos();
+        generateCategoryButtonsForOverlay();
+
+        // Rola para o primeiro vídeo após a renderização para ativar o IntersectionObserver
+        if (videoFeedContainer.firstElementChild) {
+            videoFeedContainer.firstElementChild.scrollIntoView({ behavior: 'auto' });
+        }
+    } catch (error) {
+        console.error("Não foi possível carregar os dados dos vídeos:", error);
+        videoFeedContainer.innerHTML = `
+            <div class="video-section text-center text-red-400 flex items-center justify-center p-4">
+                <p class="text-xl">Erro ao carregar vídeos: <br>${error.message}.<br>Verifique o caminho do 'videos.json' e o console.</p>
+            </div>
+        `;
+    }
+}
 
 /**
  * Renderiza as seções de vídeo com base nos vídeos filtrados.
@@ -322,9 +347,6 @@ closeCategoryOverlayBtn.addEventListener('click', hideCategoryOverlay);
 // Renderização inicial quando a página carrega
 // Usamos DOMContentLoaded para garantir que o HTML esteja completamente carregado antes de manipular o DOM
 document.addEventListener('DOMContentLoaded', function() {
-    filterAndRenderVideos(); // Renderiza o feed inicial (Home)
-    // Rola para o primeiro vídeo após a renderização para ativar o IntersectionObserver
-    if (videoFeedContainer.firstElementChild) {
-        videoFeedContainer.firstElementChild.scrollIntoView({ behavior: 'auto' });
-    }
+    loadVideosData(); // Carrega os dados dos vídeos ao iniciar
+    // As chamadas para filterAndRenderVideos e scrollIntoView estão agora dentro de loadVideosData
 });
