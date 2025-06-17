@@ -1,8 +1,10 @@
-// URL para o seu arquivo JSON hospedado no GitHub.
-// ATENÇÃO: raw.githubusercontent.com GERALMENTE NÃO PERMITE fetch() de outras origens
-// devido a políticas CORS. Isso pode causar um erro no console do seu navegador.
-// Se isso acontecer, você precisará hospedar o 'videos.json' em um serviço que envie cabeçalhos CORS.
-const VIDEOS_DATA_URL = 'https://raw.githubusercontent.com/Diegocostasp/dddd/main/videos.json';
+// URL para o seu arquivo JSON.
+// SE VOCÊ ESTIVER USANDO GITHUB PAGES PARA O SEU PROJETO INTEIRO,
+// a URL deve ser APENAS 'videos.json' ou './videos.json' se estiver na mesma pasta.
+// SE VOCÊ ESTÁ TENTANDO BUSCAR DE 'raw.githubusercontent.com' de um DOMÍNIO DIFERENTE,
+// CUIDADO: ISSO GERALMENTE É BLOQUEADO POR POLÍTICAS CORS DO NAVEGADOR.
+// A URL abaixo assume que 'videos.json' está na mesma origem (Ex: GitHub Pages do seu repo).
+const VIDEOS_DATA_URL = 'https://raw.githubusercontent.com/Diegocostasp/dddd/refs/heads/main/videos.json'; // Caminho relativo se tudo estiver no GitHub Pages
 
 let videosData = []; // Inicializa como array vazio, será preenchido via fetch
 
@@ -53,10 +55,10 @@ const observer = new IntersectionObserver((entries) => {
  */
 async function loadVideosData() {
     try {
-        const response = await fetch(VIDEOS_DATA_URL); // Tenta carregar o JSON do GitHub raw
+        const response = await fetch(VIDEOS_DATA_URL); // Tenta carregar o JSON
         if (!response.ok) {
             // Se a resposta não for OK (por exemplo, 404, ou erro de CORS sem resposta válida)
-            throw new Error(`Erro HTTP! status: ${response.status} ao carregar ${VIDEOS_DATA_URL}. Isto pode ser devido a uma política CORS.`);
+            throw new Error(`Erro HTTP! status: ${response.status} ao carregar ${VIDEOS_DATA_URL}. Verifique as permissões CORS se estiver buscando de uma origem diferente.`);
         }
         videosData = await response.json();
         console.log("Dados de vídeos carregados com sucesso:", videosData);
@@ -73,7 +75,7 @@ async function loadVideosData() {
         console.error("Não foi possível carregar os dados dos vídeos:", error);
         videoFeedContainer.innerHTML = `
             <div class="video-section text-center text-red-400 flex items-center justify-center p-4">
-                <p class="text-xl">Erro ao carregar vídeos: <br>${error.message}.<br> Verifique o console para mais detalhes. Se estiver usando GitHub raw, pode ser um problema de CORS.</p>
+                <p class="text-xl">Erro ao carregar vídeos: <br>${error.message}.<br> Por favor, verifique o console do navegador e as configurações de CORS.</p>
             </div>
         `;
     }
