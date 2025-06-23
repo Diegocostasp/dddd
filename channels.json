@@ -2,14 +2,14 @@
   "channels": [
     {
       "id": 201,
-      "title": "Globo HD",
-      "category": "tv_aberta",
+      "title": "AXN",
+      "category": "Filmes e Series",
       "country": "BR",
       "language": "pt-br",
-      "description": "Canal de televisão aberta brasileiro",
-      "logo": "https://exemplo.com/logos/globo.png",
-      "streamUrl": "https://59ec5453559f0.streamlock.net/miamitv/smil:WEB/playlist.m3u8",
-      "alternateUrl": "https://59ec5453559f0.streamlock.net/miamitv/smil:WEB/playlist.m3u8",
+      "description": "Canal de Filmes e series",
+      "logo": "https://www.doomovie-hd.vip/assets/img/ch_logo/hd-axn.png",
+      "streamUrl": "https://cdn-3.nxplay.com.br/AXN_TK/tracks-v2a1/mono.m3u8",
+      "alternateUrl": "https://cdn-3.nxplay.com.br/AXN_TK/tracks-v2a1/mono.m3u8",
       "quality": "HD",
       "type": "live",
       "featured": true,
@@ -29,7 +29,7 @@
       "type": "live",
       "featured": true,
       "isNew": false,
-      "genre": "geral"
+      "genre": "Filmes e Series"
     },
     {
       "id": 203,
