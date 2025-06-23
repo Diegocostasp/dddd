@@ -1,0 +1,268 @@
+{
+  "series": [
+    {
+      "id": 101,
+      "title": "Breaking Bad",
+      "year": 2008,
+      "genre": "drama",
+      "rating": "9.5",
+      "description": "Um professor de química do ensino médio se torna fabricante de metanfetamina após ser diagnosticado com câncer.",
+      "director": "Vince Gilligan",
+      "cast": "Bryan Cranston, Aaron Paul, Anna Gunn",
+      "seasons": 5,
+      "episodes": 62,
+      "duration": "47 min por episódio",
+      "poster": "https://image.tmdb.org/t/p/w500/breaking_bad.jpg",
+      "type": "series",
+      "featured": true,
+      "isNew": false,
+      "quality": "HD",
+      "language": "pt-br",
+      "subtitles": ["pt-br", "en"],
+      "seasons_data": [
+        {
+          "season": 1,
+          "episodes": [
+            {
+              "episode": 1,
+              "title": "Piloto",
+              "description": "Walter White, um professor de química, descobre que tem câncer terminal e decide fabricar metanfetamina.",
+              "duration": "58 min",
+              "videoUrl": "https://exemplo.com/breaking-bad-s01e01.mp4",
+              "driveUrl": "https://drive.google.com/file/d/BB_S01E01/view"
+            },
+            {
+              "episode": 2,
+              "title": "O Gato na Sacola",
+              "description": "Walt e Jesse tentam se livrar de dois corpos.",
+              "duration": "48 min",
+              "videoUrl": "https://exemplo.com/breaking-bad-s01e02.mp4",
+              "driveUrl": "https://drive.google.com/file/d/BB_S01E02/view"
+            },
+            {
+              "episode": 3,
+              "title": "...E a Sacola está no Rio",
+              "description": "Walt e Jesse continuam tentando esconder as evidências.",
+              "duration": "48 min",
+              "videoUrl": "https://exemplo.com/breaking-bad-s01e03.mp4",
+              "megaUrl": "https://mega.nz/#!BB_S01E03"
+            }
+          ]
+        },
+        {
+          "season": 2,
+          "episodes": [
+            {
+              "episode": 1,
+              "title": "Seven Thirty-Seven",
+              "description": "Walt e Jesse enfrentam novos desafios no negócio das drogas.",
+              "duration": "47 min",
+              "videoUrl": "https://exemplo.com/breaking-bad-s02e01.mp4",
+              "streamUrl": "https://streaming.com/embed/bb-s02e01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "title": "Stranger Things",
+      "year": 2016,
+      "genre": "ficcao",
+      "rating": "8.7",
+      "description": "Quando um garoto desaparece, uma pequena cidade descobre um mistério envolvendo experimentos secretos do governo.",
+      "director": "Matt Duffer, Ross Duffer",
+      "cast": "Millie Bobby Brown, Finn Wolfhard, Winona Ryder",
+      "seasons": 4,
+      "episodes": 42,
+      "duration": "51 min por episódio",
+      "poster": "https://image.tmdb.org/t/p/w500/stranger_things.jpg",
+      "type": "series",
+      "featured": true,
+      "isNew": true,
+      "quality": "4K",
+      "language": "pt-br",
+      "subtitles": ["pt-br", "en"],
+      "seasons_data": [
+        {
+          "season": 1,
+          "episodes": [
+            {
+              "episode": 1,
+              "title": "O Desaparecimento de Will Byers",
+              "description": "Will Byers desaparece misteriosamente a caminho de casa.",
+              "duration": "47 min",
+              "videoUrl": "https://exemplo.com/stranger-things-s01e01.mp4",
+              "megaUrl": "https://mega.nz/#!ST_S01E01"
+            },
+            {
+              "episode": 2,
+              "title": "A Estranha da Maple Street",
+              "description": "Lucas, Mike e Dustin tentam encontrar Will com a ajuda de Eleven.",
+              "duration": "55 min",
+              "videoUrl": "https://exemplo.com/stranger-things-s01e02.mp4",
+              "driveUrl": "https://drive.google.com/file/d/ST_S01E02/view"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "title": "The Witcher",
+      "year": 2019,
+      "genre": "aventura",
+      "rating": "8.2",
+      "description": "Geralt de Rivia, um caçador de monstros solitário, luta para encontrar seu lugar em um mundo onde as pessoas muitas vezes se mostram mais perversas que as bestas.",
+      "director": "Lauren Schmidt Hissrich",
+      "cast": "Henry Cavill, Anya Chalotra, Freya Allan",
+      "seasons": 3,
+      "episodes": 24,
+      "duration": "60 min por episódio",
+      "poster": "https://image.tmdb.org/t/p/w500/witcher.jpg",
+      "type": "series",
+      "featured": false,
+      "isNew": true,
+      "quality": "4K",
+      "language": "pt-br",
+      "subtitles": ["pt-br", "en"],
+      "seasons_data": [
+        {
+          "season": 1,
+          "episodes": [
+            {
+              "episode": 1,
+              "title": "O Fim do Começo",
+              "description": "Geralt luta contra um monstro que aterroriza a cidade de Blaviken.",
+              "duration": "62 min",
+              "videoUrl": "https://exemplo.com/witcher-s01e01.mkv",
+              "streamUrl": "https://streaming.com/embed/witcher-s01e01"
+            },
+            {
+              "episode": 2,
+              "title": "Quatro Marcos",
+              "description": "Geralt encontra Jaskier e juntos enfrentam uma nova aventura.",
+              "duration": "60 min",
+              "videoUrl": "https://exemplo.com/witcher-s01e02.mkv",
+              "alternateUrl": "https://servidor2.com/witcher-s01e02.avi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "title": "Casa de Papel",
+      "year": 2017,
+      "genre": "acao",
+      "rating": "8.3",
+      "description": "Um homem misterioso, conhecido como Professor, planeja o maior assalto da história do país.",
+      "director": "Álex Pina",
+      "cast": "Úrsula Corberó, Álvaro Morte, Itziar Ituño",
+      "seasons": 5,
+      "episodes": 52,
+      "duration": "70 min por episódio",
+      "poster": "https://image.tmdb.org/t/p/w500/casa_papel.jpg",
+      "type": "series",
+      "featured": true,
+      "isNew": false,
+      "quality": "HD",
+      "language": "pt-br",
+      "subtitles": ["pt-br", "en", "es"],
+      "seasons_data": [
+        {
+          "season": 1,
+          "episodes": [
+            {
+              "episode": 1,
+              "title": "Efeito Tokio",
+              "description": "Uma mulher misteriosa recruta um grupo de ladrões para um assalto impossível.",
+              "duration": "67 min",
+              "videoUrl": "https://exemplo.com/casa-papel-s01e01.mp4",
+              "alternateUrl": "https://servidor2.com/casa-papel-s01e01.avi"
+            },
+            {
+              "episode": 2,
+              "title": "Imprudência",
+              "description": "O grupo entra na Casa da Moeda e começa a execução do plano.",
+              "duration": "41 min",
+              "videoUrl": "https://exemplo.com/casa-papel-s01e02.mp4",
+              "driveUrl": "https://drive.google.com/file/d/CP_S01E02/view"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "title": "The Last of Us",
+      "year": 2023,
+      "genre": "drama",
+      "rating": "8.9",
+      "description": "Joel e Ellie navegam por um mundo pós-apocalíptico devastado por uma infecção fúngica mortal.",
+      "director": "Craig Mazin, Neil Druckmann",
+      "cast": "Pedro Pascal, Bella Ramsey, Anna Torv",
+      "seasons": 1,
+      "episodes": 9,
+      "duration": "60 min por episódio",
+      "poster": "https://image.tmdb.org/t/p/w500/last_of_us.jpg",
+      "type": "series",
+      "featured": true,
+      "isNew": true,
+      "quality": "4K",
+      "language": "pt-br",
+      "subtitles": ["pt-br", "en"],
+      "seasons_data": [
+        {
+          "season": 1,
+          "episodes": [
+            {
+              "episode": 1,
+              "title": "Quando Você Está Perdido na Escuridão",
+              "description": "Joel Miller deve contrabandear Ellie, uma garota de 14 anos, para fora de uma zona de quarentena.",
+              "duration": "81 min",
+              "videoUrl": "https://exemplo.com/tlou-s01e01.mp4",
+              "streamUrl": "https://streaming.com/embed/tlou-s01e01",
+              "megaUrl": "https://mega.nz/#!TLOU_S01E01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "title": "Wednesday",
+      "year": 2022,
+      "genre": "comedia",
+      "rating": "8.1",
+      "description": "Wednesday Addams, uma estudante psíquica, tenta dominar sua habilidade emergente, frustra um monstro assassino e resolve o mistério que envolveu seus pais.",
+      "director": "Alfred Gough, Miles Millar",
+      "cast": "Jenna Ortega, Hunter Doohan, Emma Myers",
+      "seasons": 1,
+      "episodes": 8,
+      "duration": "50 min por episódio",
+      "poster": "https://image.tmdb.org/t/p/w500/wednesday.jpg",
+      "type": "series",
+      "featured": true,
+      "isNew": true,
+      "quality": "4K",
+      "language": "pt-br",
+      "subtitles": ["pt-br", "en"],
+      "seasons_data": [
+        {
+          "season": 1,
+          "episodes": [
+            {
+              "episode": 1,
+              "title": "O Dia de Quarta-feira Sempre Morre",
+              "description": "Wednesday Addams é expulsa de sua escola e vai para a Academia Nevermore.",
+              "duration": "57 min",
+              "videoUrl": "https://exemplo.com/wednesday-s01e01.mp4",
+              "driveUrl": "https://drive.google.com/file/d/WED_S01E01/view"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
