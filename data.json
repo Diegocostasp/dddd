@@ -9,8 +9,8 @@
       "description": "Descrição do filme...dfffffffddddddddddddddddddddddd",
       "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
       "type": "movie"
-      "featured": true, // aparece na página inicial
-      "isNew": true // aparece em novidades
+      "featured": true,
+      "isNew": true
     }
   ]
 }
