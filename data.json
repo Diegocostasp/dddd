@@ -1,10 +1,10 @@
 {
   "movies": [
     {
-      "id": 1,          // ou "ID"
-      "title": "Filme", // ou "teste"
-      "url": "link",    // ou "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "videoUrl", "VIDEO_URL"
-      "type": "movie"   // ou "ação"
+      "id": 1,
+      "title": "Filme",
+      "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "type": "movie"
     }
   ]
 }
