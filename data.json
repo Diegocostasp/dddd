@@ -1,16 +1,10 @@
 {
   "movies": [
     {
-      "id": 1,
-      "title": "teste",
-      "year": 2023,
-      "genre": "acao",
-      "rating": "8.5",
-      "description": "Descrição do filme...dfffffffddddddddddddddddddddddd",
-      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-      "type": "movie"
-      "featured": true,
-      "isNew": true
+      "id": 1,          // ou "ID"
+      "title": "Filme", // ou "teste"
+      "url": "link",    // ou "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "videoUrl", "VIDEO_URL"
+      "type": "movie"   // ou "ação"
     }
   ]
 }
