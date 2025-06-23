@@ -18,18 +18,18 @@
     },
     {
       "id": 202,
-      "title": "SBT",
-      "category": "tv_aberta",
+      "title": "FILM&ARTS",
+      "category": "Filmes e Series",
       "country": "BR",
       "language": "pt-br",
       "description": "Sistema Brasileiro de Televisão",
-      "logo": "https://exemplo.com/logos/sbt.png",
-      "streamUrl": "https://59ec5453559f0.streamlock.net/miamitv/smil:WEB/playlist.m3u8",
+      "logo": "https://logo.iptveditor.com/film&arts.png",
+      "streamUrl": "https://cdn-3.nxplay.com.br/Film_Arts_Brasil_TK/tracks-v2a1/mono.m3u8",
       "quality": "HD",
       "type": "live",
       "featured": true,
       "isNew": false,
-      "genre": "Filmes e Series"
+      "genre": "geral"
     },
     {
       "id": 203,
