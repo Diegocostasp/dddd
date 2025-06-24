@@ -14,7 +14,7 @@
       "type": "live",
       "featured": true,
       "isNew": false,
-      "genre": "geral"
+      "genre": "Filmes e Series"
     },
     {
       "id": 202,
@@ -29,7 +29,7 @@
       "type": "live",
       "featured": true,
       "isNew": false,
-      "genre": "geral"
+      "genre": "Filmes e Series"
     },
     {
       "id": 203,
@@ -45,7 +45,7 @@
       "type": "live",
       "featured": false,
       "isNew": false,
-      "genre": "geral"
+      "genre": "Diversos"
     },
     {
       "id": 204,
@@ -61,7 +61,7 @@
       "type": "live",
       "featured": true,
       "isNew": false,
-      "genre": "esportes"
+      "genre": "Comidas"
     },
     {
       "id": 205,
@@ -92,7 +92,7 @@
       "type": "live",
       "featured": true,
       "isNew": false,
-      "genre": "infantil"
+      "genre": "documentario"
     },
     {
       "id": 207,
@@ -107,7 +107,7 @@
       "type": "live",
       "featured": false,
       "isNew": true,
-      "genre": "noticias"
+      "genre": "Desenho"
     },
     {
       "id": 208,
@@ -123,7 +123,7 @@
       "type": "live",
       "featured": false,
       "isNew": false,
-      "genre": "entretenimento"
+      "genre": "Desenho"
     },
     {
       "id": 209,
@@ -138,7 +138,7 @@
       "type": "live",
       "featured": true,
       "isNew": false,
-      "genre": "documentario"
+      "genre": "Filmes e series"
     },
     {
       "id": 210,
@@ -153,7 +153,7 @@
       "type": "live",
       "featured": false,
       "isNew": false,
-      "genre": "comedia"
+      "genre": "Filmes e series"
     },
     {
       "id": 211,
@@ -169,6 +169,126 @@
       "featured": true,
       "isNew": false,
       "genre": "documentario"
+    },
+    {
+      "id": 212,
+      "title": "URBAN RETRO",
+      "category": "Filmes e series",
+      "country": "BR",
+      "language": "pt-br",
+      "description": "Canal de filmes clasicos",
+      "logo": "https://d14z5zgripclfw.cloudfront.net/account351-i1091/archive/17/public/1666632625/retro-1666632625.png",
+      "streamUrl": "https://cdn-3.nxplay.com.br/URBAN_RETRO/tracks-v1a1/mono.m3u8",
+      "quality": "hd",
+      "type": "live",
+      "featured": true,
+      "isNew": false,
+      "genre": "Filmes e series"
+    },
+    {
+      "id": 213,
+      "title": "CLUBINHO FUN",
+      "category": "Desenho",
+      "country": "BR",
+      "language": "pt-br",
+      "description": "Canal de filmes clasicos",
+      "logo": "https://storage.googleapis.com/sorocabana/2023/3/a1a4393935d6ae8339d34b9cc5baed5f.png",
+      "streamUrl": "https://cdn-3.nxplay.com.br/CLUBINHO/tracks-v1a1/mono.m3u8",
+      "quality": "hd",
+      "type": "live",
+      "featured": true,
+      "isNew": false,
+      "genre": "Desenho"
+    },
+    {
+      "id": 214,
+      "title": "BORA FILMES",
+      "category": "Filmes e series",
+      "country": "BR",
+      "language": "pt-br",
+      "description": "Canal de filmes clasicos",
+      "logo": "https://lh3.googleusercontent.com/proxy/uPOJu09LhmzalG-QYIwojEnVwf_0MLVBaCedkTSiGyl_4N7nJDYHZKRFA0ar1oFDV6iLD2OVgbdp0HU4UYNrF573MyBUR9VHQbykbK9gJLPEUnhQf0CsEYaiazoMgZSGy7Piaqs",
+      "streamUrl": "https://cdn-3.nxplay.com.br/BORA_FILMES/tracks-v1a1/mono.m3u8",
+      "quality": "hd",
+      "type": "live",
+      "featured": true,
+      "isNew": false,
+      "genre": "Filmes e series"
+    },
+    {
+      "id": 215,
+      "title": "WARNER CHANNEL",
+      "category": "Filmes e series",
+      "country": "BR",
+      "language": "pt-br",
+      "description": "Canal de filmes e series tops",
+      "logo": "https://www.doomovie-hd.vip/assets/img/ch_logo/hd-warnertv.png",
+      "streamUrl": "https://cdn-3.nxplay.com.br/WARNER_CHANNEL/tracks-v2a1/mono.m3u8",
+      "quality": "hd",
+      "type": "live",
+      "featured": true,
+      "isNew": false,
+      "genre": "Filmes e series"
+    },
+    {
+      "id": 216,
+      "title": "VIVAX TV",
+      "category": "Filmes e series",
+      "country": "BR",
+      "language": "pt-br",
+      "description": "Canal de filmes e series clasicos",
+      "logo": "https://static.wixstatic.com/media/9b4759_2455541c839e4dc6972ff9234d2ef2bf~mv2.png/v1/fill/w_280,h_125,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/9b4759_2455541c839e4dc6972ff9234d2ef2bf~mv2.png",
+      "streamUrl": "https://cdn-3.nxplay.com.br/VIVAX/tracks-v2a1/mono.m3u8",
+      "quality": "hd",
+      "type": "live",
+      "featured": true,
+      "isNew": false,
+      "genre": "Filmes e series"
+    },
+    {
+      "id": 216,
+      "title": "TV EVANGELIZAR",
+      "category": "Cristão",
+      "country": "BR",
+      "language": "pt-br",
+      "description": "Canal Cristão",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/6/66/TV_Evangelizar_logo_2019.png",
+      "streamUrl": "https://cdn-3.nxplay.com.br/EVANGELIZAR/tracks-v2a1/mono.m3u8",
+      "quality": "hd",
+      "type": "live",
+      "featured": true,
+      "isNew": false,
+      "genre": "Cristão"
+    },
+    {
+      "id": 217,
+      "title": "Loading TV",
+      "category": "Desenho",
+      "country": "BR",
+      "language": "pt-br",
+      "description": "Canal Cristão",
+      "logo": "https://listaiptv.gratis/logos/imagens/loadingamarelo.png",
+      "streamUrl": "https://stmv1.srvif.com/loadingtv/loadingtv/playlist.m3u8",
+      "quality": "hd",
+      "type": "live",
+      "featured": true,
+      "isNew": false,
+      "genre": "Desenho"
+    },
+    {
+      "id": 218,
+      "title": "Miami TV",
+      "category": "Diversos",
+      "country": "BR",
+      "language": "pt-br",
+      "description": "Diversos",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/1/10/Miami_tv.png",
+      "streamUrl": "https://cdn-3.nxplay.com.br/EVANGELIZAR/tracks-v2a1/mono.m3u8",
+      "quality": "hd",
+      "type": "live",
+      "featured": true,
+      "isNew": false,
+      "genre": "Diversos"
     }
   ]
 }
