@@ -269,6 +269,7 @@
       "description": "Canal Cristão",
       "logo": "https://listaiptv.gratis/logos/imagens/loadingamarelo.png",
       "streamUrl": "https://stmv1.srvif.com/loadingtv/loadingtv/playlist.m3u8",
+      "alternateUrl": "https://stmv1.srvif.com/loadingtv/loadingtv/playlist.m3u8",
       "quality": "hd",
       "type": "live",
       "featured": true,
@@ -304,6 +305,38 @@
       "featured": true,
       "isNew": false,
       "genre": "Filmes e series"
+    },
+    {
+      "id": 220,
+      "title": "WORDING TV",
+      "category": "Desenho",
+      "country": "BR",
+      "language": "pt-br",
+      "description": "Desenho",
+      "logo": "https://i.imgur.com/C5nMqAf.png",
+      "streamUrl": "https://tv02.zas.media:1936/wordingtv/wordingtv/chunklist_w1264551258.m3u8",
+      "alternateUrl": "https://tv02.zas.media:1936/wordingtv/wordingtv/chunklist_w1264551258.m3u8",
+      "quality": "hd",
+      "type": "live",
+      "featured": true,
+      "isNew": false,
+      "genre": "Desenho"
+    },
+     {
+      "id": 221,
+      "title": "Geekdot",
+      "category": "Desenho",
+      "country": "BR",
+      "language": "pt-br",
+      "description": "Desenho",
+      "logo": "https://i.imgur.com/NMMtJ8F.png",
+      "streamUrl": "https://stream.ichibantv.com:3764/hybrid/play.m3u8",
+      "alternateUrl": "https://stream.ichibantv.com:3764/hybrid/play.m3u8",
+      "quality": "hd",
+      "type": "live",
+      "featured": true,
+      "isNew": false,
+      "genre": "Desenho"
     }
   ]
 }
