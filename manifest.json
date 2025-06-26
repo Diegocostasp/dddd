@@ -1,0 +1,96 @@
+{
+  "name": "CineStream - Filmes e Séries",
+  "short_name": "CineStream",
+  "description": "Sua plataforma completa de streaming com filmes, séries e TV online",
+  "start_url": "https://seudominio.blogspot.com",
+  "scope": "https://seudominio.blogspot.com/",
+  "display": "fullscreen",
+  "orientation": "landscape", 
+  "theme_color": "#ff6b6b",
+  "background_color": "#1a1a2e",
+  "lang": "pt-BR",
+  "categories": ["entertainment", "video", "media"],
+  "icons": [
+    {
+      "src": "https://seuusuario.github.io/cinestream-pwa/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "https://seuusuario.github.io/cinestream-pwa/icons/icon-96x96.png", 
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "https://seuusuario.github.io/cinestream-pwa/icons/icon-128x128.png",
+      "sizes": "128x128", 
+      "type": "image/png"
+    },
+    {
+      "src": "https://seuusuario.github.io/cinestream-pwa/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "https://seuusuario.github.io/cinestream-pwa/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "https://seuusuario.github.io/cinestream-pwa/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://seuusuario.github.io/cinestream-pwa/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "https://seuusuario.github.io/cinestream-pwa/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Filmes",
+      "short_name": "Filmes",
+      "description": "Ver todos os filmes disponíveis",
+      "url": "https://seudominio.blogspot.com/?tab=movies",
+      "icons": [
+        {
+          "src": "https://seuusuario.github.io/cinestream-pwa/icons/shortcut-movies.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Séries", 
+      "short_name": "Séries",
+      "description": "Ver todas as séries disponíveis",
+      "url": "https://seudominio.blogspot.com/?tab=series",
+      "icons": [
+        {
+          "src": "https://seuusuario.github.io/cinestream-pwa/icons/shortcut-series.png", 
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "TV Online",
+      "short_name": "TV",
+      "description": "Assistir canais de TV online",
+      "url": "https://seudominio.blogspot.com/?tab=channels", 
+      "icons": [
+        {
+          "src": "https://seuusuario.github.io/cinestream-pwa/icons/shortcut-tv.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "display_override": ["fullscreen", "standalone", "minimal-ui"]
+}
