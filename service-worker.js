@@ -1,7 +1,7 @@
 const CACHE_NAME = "cinestream-cache-v1";
 const urlsToCache = [
-  "./indexcine.html",
-  "./manifest.json",
+  "https://testegeral12.blogspot.com/",
+  "https://raw.githubusercontent.com/Diegocostasp/dddd/refs/heads/main/manifest.json",
   "./icons/icon-192.png",
   "./icons/icon-512.png"
   // adicione aqui JS/CSS externos se quiser cache offline real
