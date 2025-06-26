@@ -4,15 +4,15 @@ const OFFLINE_CACHE = 'cinestream-offline-v1.0.0';
 
 // URLs do seu Blogspot para cache (substituir por seu domínio real)
 const BLOGSPOT_URLS = [
-  'https://seudominio.blogspot.com/',
-  'https://seudominio.blogspot.com/?tab=movies', 
-  'https://seudominio.blogspot.com/?tab=series',
-  'https://seudominio.blogspot.com/?tab=channels'
+  'https://testegeral12.blogspot.com/',
+  'https://testegeral12.blogspot.com/?tab=movies', 
+  'https://testegeral12.blogspot.com/?tab=series',
+  'https://testegeral12.blogspot.com/?tab=channels'
 ];
 
 // Detectar automaticamente o domínio do Blogspot
 const BLOGSPOT_DOMAIN = self.location.origin.includes('github.io') ? 
-  'https://seudominio.blogspot.com' : self.location.origin;
+  'https://testegeral12.blogspot.com' : self.location.origin;
 
 // Recursos estáticos para cache
 const STATIC_RESOURCES = [
@@ -377,7 +377,7 @@ self.addEventListener('push', event => {
         }
       ],
       data: {
-        url: 'https://seudominio.blogspot.com'
+        url: 'https://testegeral12.blogspot.com'
       }
     };
     
@@ -405,7 +405,7 @@ self.addEventListener('notificationclick', event => {
         
         // Senão, abrir nova aba no Blogspot
         if (clients.openWindow) {
-          return clients.openWindow('https://seudominio.blogspot.com');
+          return clients.openWindow('https://testegeral12.blogspot.com');
         }
       })
     );
