@@ -2,8 +2,8 @@
   "name": "CineStream - Filmes e Séries",
   "short_name": "CineStream",
   "description": "Sua plataforma completa de streaming com filmes, séries e TV online",
-  "start_url": "https://seudominio.blogspot.com",
-  "scope": "https://seudominio.blogspot.com/",
+  "start_url": "https://testegeral12.blogspot.com/",
+  "scope": "https://testegeral12.blogspot.com/",
   "display": "fullscreen",
   "orientation": "landscape", 
   "theme_color": "#ff6b6b",
@@ -57,7 +57,7 @@
       "name": "Filmes",
       "short_name": "Filmes",
       "description": "Ver todos os filmes disponíveis",
-      "url": "https://seudominio.blogspot.com/?tab=movies",
+      "url": "https://testegeral12.blogspot.com/?tab=movies",
       "icons": [
         {
           "src": "https://seuusuario.github.io/cinestream-pwa/icons/shortcut-movies.png",
@@ -69,7 +69,7 @@
       "name": "Séries", 
       "short_name": "Séries",
       "description": "Ver todas as séries disponíveis",
-      "url": "https://seudominio.blogspot.com/?tab=series",
+      "url": "https://testegeral12.blogspot.com/?tab=series",
       "icons": [
         {
           "src": "https://seuusuario.github.io/cinestream-pwa/icons/shortcut-series.png", 
@@ -81,7 +81,7 @@
       "name": "TV Online",
       "short_name": "TV",
       "description": "Assistir canais de TV online",
-      "url": "https://seudominio.blogspot.com/?tab=channels", 
+      "url": "https://testegeral12.blogspot.com/?tab=channels", 
       "icons": [
         {
           "src": "https://seuusuario.github.io/cinestream-pwa/icons/shortcut-tv.png",
