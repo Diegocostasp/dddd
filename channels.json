@@ -347,7 +347,7 @@
       "description": "Desenho",
       "logo": "https://sinalpublico.vercel.app/imgs/globo.png",
       "streamUrl": "https://sinalpublico.vercel.app/play/dtv.html?id=globo",
-      "alternateUrl": "https://sinalpublico.vercel.app/play/dtv.html?id=globo",
+      "videoUrl": "https://sinalpublico.vercel.app/play/dtv.html?id=globo",
       "quality": "hd",
       "type": "live",
       "featured": true,
