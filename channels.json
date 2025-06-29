@@ -337,6 +337,22 @@
       "featured": true,
       "isNew": false,
       "genre": "Desenho"
+    },
+    {
+      "id": 222,
+      "title": "Globo",
+      "category": "Aberto",
+      "country": "BR",
+      "language": "pt-br",
+      "description": "Desenho",
+      "logo": "https://sinalpublico.vercel.app/imgs/globo.png",
+      "streamUrl": "https://sinalpublico.vercel.app/play/dtv.html?id=globo",
+      "alternateUrl": "https://sinalpublico.vercel.app/play/dtv.html?id=globo",
+      "quality": "hd",
+      "type": "live",
+      "featured": true,
+      "isNew": false,
+      "genre": "Aberto"
     }
   ]
 }
